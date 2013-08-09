@@ -28,3 +28,7 @@ platform :ruby do
   gem 'pg'
   gem 'sqlite3'
 end
+
+group :development, :test do
+  gem "pry"
+end

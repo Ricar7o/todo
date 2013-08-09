@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Getting Things Done with Engine Yard Cloud</title>
-  
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -24,11 +24,14 @@
         </div>
 		<div id="foot">
 			<div class="copyright">
-			<p>   
+			<p>
 			  Running on Engine Yard: <a href="http://engineyard.com/products/appcloud">The Ruby Cloud</a> and <a href="http://www.rubyonrails.org">Rails 3</a><br>
 			  Ruby is the Language of the Cloud.<br>
 			  Copyright © Engine Yard, Inc. All rights reserved.
 			</p>
+      <p>
+        Running under <%= @app_server %>, Ruby <%= RUBY_VERSION %>-p<%= RUBY_PATCHLEVEL %>, on platform <%= RUBY_PLATFORM %>
+      </p>
 			</div>
 		</div>
     </div>
